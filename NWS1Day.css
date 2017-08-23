@@ -1,0 +1,33 @@
+/* Stylesheet for NWS1Day.html */
+body {
+  font-family: sans-serif;
+}
+img {
+	display:inline;
+}
+div.period {
+  float:left;
+  overflow: auto;
+  width: 20%;
+}
+div#forecast {
+
+}
+div#hourly {
+clear:left;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+hr {
+  border-top: 2pt solid darkgreen;
+  clear: left;
+}
+.wxgraph {
+  clear: left;
+}

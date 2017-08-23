@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Created with help from JS Bin
+http://jsbin.com
+Copyright (c) 2017 by FTNman
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<html>
+<head>
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="NWS1Day.css"/>
+	<title>1 Day Forecast for: <span id="LocStr"></span></title>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+	<script src="NWS1Day.js"></script>
+</head>
+<body>
+	<div id="forecast"></div>
+	<div id="hourly"></div>
+	<script id="jsbin-javascript" >
+		
+		city="Philadelphia,PA";
+		$(document).ready(function () {
+				$('#forecast').html("Loading forecast... for " + city + '(' + cities[city] + ')');
+				NWSFORECAST.loadMeta(city);
+		});
+	</script>
+</body>
+</html>
